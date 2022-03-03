@@ -1,5 +1,6 @@
 # control
 
+import os
 import pymongo
 from pymongo import MongoClient
 
@@ -8,7 +9,7 @@ def get_a():
 
     try:
 
-        pwd_mongo = process.env.PWD_MONGO #
+        pwd_mongo = os.environ.get('PWD_MONGO') # process.env.PWD_MONGO #
         path_db = f"mongodb+srv://mmmmm1:{pwd_mongo}@cluster0.8tcnc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
         
         # atlas.
