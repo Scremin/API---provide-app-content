@@ -7,7 +7,7 @@
         "use": "@liudonghua123/now-flask"
         }
     ],
-    "router":[
+    "routes":[
         {
             "src":"(.*)","dest":"api_a.py"
         }
