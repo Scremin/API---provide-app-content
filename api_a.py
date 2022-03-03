@@ -3,11 +3,12 @@
 from flask import Flask
 
 app = Flask(__name__)
+app.url_map.strict_slashes = False
+
 
 # -- ROTAS.
 @app.route("/")
 def hominho():
-
 	return "<h1>Not authorized</h1>"
 
 
