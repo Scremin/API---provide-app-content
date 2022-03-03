@@ -1,0 +1,15 @@
+{
+    "name":"Sub API",
+    "version":1,
+    "builds":[
+        {
+        "src": "*py",
+        "use": "@liudonghua123/now-flask"
+        }
+    ],
+    "router":[
+        {
+            "src":"(.*)","dest":"api_a.py"
+        }
+    ]
+}
